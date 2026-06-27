@@ -22,7 +22,9 @@ export default function Footer() {
 
               <div>
                 <h3 className="font-mono text-3xl font-extrabold tracking-wide text-white">
+                  
                   Polash Hossain
+                  
                 </h3>
 
                 <p className="text-lg text-slate-300">
