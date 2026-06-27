@@ -125,7 +125,7 @@ export default function Contract() {
                     <h4 className="font-semibold text-white">Email</h4>
 
                     <p className="text-slate-400">
-                      mrsheraz325@gmail.com
+                      polash@gmail.com
                     </p>
 
                     <p className="text-sm text-slate-500">
@@ -145,7 +145,7 @@ export default function Contract() {
                     </h4>
 
                     <p className="text-slate-400">
-                      +92 301 1565517
+                      +088 01733453433
                     </p>
 
                     <p className="text-sm text-slate-500">
@@ -165,7 +165,7 @@ export default function Contract() {
                     </h4>
 
                     <p className="text-slate-400">
-                      Sahiwal, Pakistan
+                      Dhaka, Bangladesh
                     </p>
 
                     <p className="text-sm text-slate-500">
