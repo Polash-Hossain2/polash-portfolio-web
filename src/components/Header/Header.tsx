@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Menu } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Typography } from "@mui/material";
 
 import {
   Sheet,
@@ -51,46 +52,57 @@ export default function Header() {
 }, []);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-slate-900/90 backdrop-blur-lg">
-      <div className="mx-auto flex max-w-7xl items-center px-5 py-4.5">
+    <header className=" sticky top-0 z-50 border-b border-white/10 bg-slate-900/90 backdrop-blur-lg">
+      <div className=" mx-auto flex max-w-7xl items-center px-5 py-4.5">
 
         {/* Logo */}
         <div className="flex items-center gap-3">
 
-          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-purple-600 font-bold text-white">
-            P
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-purple-600">
+            <span className="text-lg font-bold text-white">P</span>
           </div>
 
           <div>
-            <h2 className="font-bold text-white">
-              Polash Hossain
-            </h2>
-
-            <p className="text-xs text-slate-400">
-              Full Stack Developer
+              <Typography variant="h6" >
+            
+             <p className="font-bold tracking-wider	text-xl   text-white">
+               Polash Hossain
+             </p>
+            
+            </Typography>
+           <Typography variant="h6" className="font-normal	 ">
+            <p className="font-normal text-xs text-gray-400">
+              FULL Stack Developer
             </p>
+            </Typography>
+          
           </div>
-
+         
         </div>
 
         {/* Desktop */}
         <nav className="ml-auto hidden lg:block">
           <ul className="flex gap-8">
+           
             {navItems.map((item) => (
               <li key={item.name}>
+                 <Typography variant="h6" >
                 <Link
                   href={item.href}
                   onClick={() => setActive(item.name)}
-                  className={`border-b-2 pb-1 text-sm font-semibold transition-all ${
+                  className={`border-b-2 pb-1 text-base font-semibold transition-all ${
                     active === item.name
                       ? "border-blue-500 text-blue-500"
                       : "border-transparent text-white"
                   }`}
                 >
+                  
                   {item.name}
                 </Link>
+                </Typography>
               </li>
             ))}
+            
           </ul>
         </nav>
 
